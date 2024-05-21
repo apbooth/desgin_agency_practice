@@ -14,8 +14,43 @@ h1 {
   font-size: 5rem;
 }
 
+.left {
+  float: left;
+}
+.left > .tile-image{
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.right > .tile-image{
+  float: left;
+}
+
 footer {
   text-align: right;
   color: midnightblue;
 }
 
+@media (min-width: 1024px) {
+
+  .card {
+    max-width: 50%;
+  }
+  .tile-image {
+    max-width: 50%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .tile-image {
+    max-width: 100%;
+  }
+}
